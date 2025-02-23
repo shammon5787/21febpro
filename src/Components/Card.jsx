@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { IoClose } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
+import CardItem from './CardItem';
 
 
 
@@ -13,6 +14,10 @@ const Card = () => {
                     <h1>Your Orders</h1>
                     <IoClose onClick={() => setActivecard(!activecard)} className='text-4xl cursor-pointer' />
                 </div>
+
+                <CardItem />
+                <CardItem />
+
                 <div className='fixed bottom-8'>
                     <h1>Total Items: 0</h1>
                     <h1>Total Price: 0</h1>
