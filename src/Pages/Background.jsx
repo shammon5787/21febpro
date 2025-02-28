@@ -10,7 +10,7 @@ const Background = () => {
   const [playStatus, setPlayStatus] = useState(true)
   const [heroCount, setHeroCount] = useState(0)
   return (
-    <div>
+    <div className='mt-20'>
       <Animation playStatus = {playStatus} heroCount = {heroCount}/>
     </div>
   )

@@ -5,7 +5,7 @@ import Card from '../Components/Card'
 
 const Home = () => {
   return (
-    <div className='m-6'>
+    <div className='mt-24 mx-5'>
         <CategoryMenu/>
         <FoodItem />
         <Card />
