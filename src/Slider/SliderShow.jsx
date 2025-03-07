@@ -42,19 +42,23 @@
 // export default SliderShow
 
 
+
 import React from 'react'
 import { useState } from 'react'
 
 const SliderShow = () => {
-    const [name, setname] = useState("Ali")
-    const NewName = (e)=>{
-        const nname = e.target.value
-        setname(nname)
-    }
+  const [count, setcount] = useState(0)
+  const [text, settext] = useState(false)
   return (
     <div>
-        <input onChange={NewName} className='bg-green-50 text-black p-2' type="text" placeholder='type......' name="" id="" />
-        <h1>Hello : {name}</h1>
+      <h1>{count}</h1>
+      <button onClick={()=>{
+        setcount(count + 1)
+        settext(!text)
+      }} className='bg-blue-950 px-2 py-0.5 rounded-md cursor-pointer'>INC/ADD</button>
+      {
+        text && <h1>show text</h1>
+      }
     </div>
   )
 }
