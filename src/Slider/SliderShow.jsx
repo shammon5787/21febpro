@@ -42,24 +42,11 @@
 // export default SliderShow
 
 
-
 import React from 'react'
-import { useState } from 'react'
 
 const SliderShow = () => {
-  const [count, setcount] = useState(0)
-  const [text, settext] = useState(false)
   return (
-    <div>
-      <h1>{count}</h1>
-      <button onClick={()=>{
-        setcount(count + 1)
-        settext(!text)
-      }} className='bg-blue-950 px-2 py-0.5 rounded-md cursor-pointer'>INC/ADD</button>
-      {
-        text && <h1>show text</h1>
-      }
-    </div>
+    <div>SliderShow</div>
   )
 }
 
